@@ -37,15 +37,15 @@ import { Separator } from "@/components/ui/separator";
 // Simple data model (edit me!)
 // -----------------------------
 const PROFILE = {
-  name: "Mr Half",
+  name: "Alok Kumar Upadhyay",
   title: "DevOps Engineer",
   location: "India (Open to Remote)",
-  email: "you@example.com",
-  phone: "+91-00000-00000",
+  email: "alokupadhyay039@gmail.com",
+  phone: "+91-96283-71650",
   summary:
     "Entry-level DevOps Engineer focused on automation, CI/CD, cloud cost optimization, and secure, reliable deployments. I turn manual runbooks into reproducible pipelines.",
   links: {
-    github: "https://github.com/yourhandle",
+    github: "https://github.com/mralok039",
     linkedin: "https://linkedin.com/in/yourhandle",
     resume: "#", // replace with hosted PDF URL
   },
@@ -161,13 +161,26 @@ const TOOLS = [
 ];
 
 // Utility badges
-const Tag = ({ children }) => (
+type TagProps = {
+  children: React.ReactNode;
+};
+
+const Tag: React.FC<TagProps> = ({ children }) => (
   <Badge variant="secondary" className="rounded-full px-3 py-1 text-xs">
     {children}
   </Badge>
 );
 
-const Section = ({ id, title, desc, children }) => (
+
+type SectionProps = {
+  id: string;
+  title: string;
+  desc?: string; // now optional
+  children: React.ReactNode;
+};
+
+const Section: React.FC<SectionProps> = ({ id, title, desc, children }) => (
+
   <section id={id} className="scroll-mt-24">
     <div className="mb-6">
       <h2 className="text-2xl font-semibold tracking-tight">{title}</h2>
@@ -179,8 +192,8 @@ const Section = ({ id, title, desc, children }) => (
   </section>
 );
 
-function useDarkMode() {
-  const [dark, setDark] = useState(true);
+function useDarkMode(): [boolean, React.Dispatch<React.SetStateAction<boolean>>] {
+  const [dark, setDark] = useState<boolean>(true);
   React.useEffect(() => {
     const root = window.document.documentElement;
     if (dark) root.classList.add("dark");
@@ -188,6 +201,7 @@ function useDarkMode() {
   }, [dark]);
   return [dark, setDark];
 }
+
 
 export default function DevOpsPortfolio() {
   const [query, setQuery] = useState("");
@@ -336,7 +350,7 @@ export default function DevOpsPortfolio() {
             </Card>
             <Card className="md:col-span-2">
               <CardHeader>
-                <CardTitle>What I\'m focusing on</CardTitle>
+                <CardTitle>What I&apos;m focusing on</CardTitle>
               </CardHeader>
               <CardContent className="text-sm text-muted-foreground">
                 <ul className="list-disc pl-5 space-y-2">
@@ -499,7 +513,7 @@ export default function DevOpsPortfolio() {
         <Section
           id="contact"
           title="Contact"
-          desc="Let\'s talk about how I can help your team ship faster and safer."
+          desc="Let&apos;s talk about how I can help your team ship faster and safer."
         >
           <Card className="max-w-2xl">
             <CardContent className="pt-6">

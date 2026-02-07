@@ -335,7 +335,7 @@ export default function DevOpsPortfolio() {
           >
             <Badge className="rounded-full">Open to Work</Badge>
             <h1 className="text-3xl md:text-5xl font-bold leading-tight">
-              {PROFILE.title} building reliable CI/CD pipelines & cloud deployments.
+              {PROFILE.title} | AWS • Kubernetes • CI/CD • Terraform
             </h1>
             <p className="text-muted-foreground max-w-prose">
               {PROFILE.summary}
@@ -644,7 +644,7 @@ export default function DevOpsPortfolio() {
         <Section
           id="contact"
           title="Contact"
-          desc="Let&apos;s talk about how I can help your team ship faster and safer."
+          desc="Open to DevOps Engineer, Cloud Engineer and SRE roles. Available for interviews."
         >
           <Card className="max-w-2xl">
             <CardContent className="pt-6">

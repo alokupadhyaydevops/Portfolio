@@ -43,10 +43,10 @@ const PROFILE = {
   email: "alokupadhyay039@gmail.com",
   phone: "+91-96283-71650",
   summary:
-    "Entry-level DevOps Engineer focused on automation, CI/CD, cloud cost optimization, and secure, reliable deployments. I turn manual runbooks into reproducible pipelines.",
+    "DevOps Engineer Intern with hands-on experience in Docker, Kubernetes, CI/CD and AWS. I build real-world projects to automate deployments, manage infrastructure as code, and monitor applications. Focused on learning production-grade DevOps practices.",
   links: {
-    github: "https://github.com/mralok039",
-    linkedin: "https://linkedin.com/in/yourhandle",
+    github: "https://github.com/alokupadhyaydevops",
+    linkedin: "https://linkedin.com/in/alokupadhyaydevops",
     resume: "#", // replace with hosted PDF URL
   },
 };
@@ -265,7 +265,7 @@ export default function DevOpsPortfolio() {
           >
             <Badge className="rounded-full">Open to Work</Badge>
             <h1 className="text-3xl md:text-5xl font-bold leading-tight">
-              {PROFILE.title} crafting reliable releases & cost‑efficient clouds.
+              {PROFILE.title} building reliable CI/CD pipelines & cloud deployments.
             </h1>
             <p className="text-muted-foreground max-w-prose">
               {PROFILE.summary}

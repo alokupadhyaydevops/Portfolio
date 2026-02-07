@@ -47,7 +47,7 @@ const PROFILE = {
   links: {
     github: "https://github.com/alokupadhyaydevops",
     linkedin: "https://linkedin.com/in/alokupadhyaydevops",
-    resume: "#", // replace with hosted PDF URL
+    resume: "Alokupadhyaydevops.pdf",
   },
 };
 
@@ -58,9 +58,9 @@ const SKILLS = [
     items: ["Ubuntu", "Bash", "Systemd", "Networking"],
   },
   {
-    name: "CI/CD",
+    name: "DevOps & CI/CD",
     icon: <Rocket className="h-5 w-5" />,
-    items: ["GitHub Actions", "GitLab CI", "Jenkins"],
+    items: ["GitHub Actions", "Jenkins", "CI/CD Pipelines"],
   },
   {
     name: "Containers & Orchestration",
@@ -70,10 +70,10 @@ const SKILLS = [
   {
     name: "Cloud",
     icon: <Cloud className="h-5 w-5" />,
-    items: ["AWS", "GCP", "Azure"],
+    items: ["AWS (EC2, S3, VPC, IAM)"],
   },
   {
-    name: "Infra as Code",
+    name: "Infrastructure as Code",
     icon: <Wrench className="h-5 w-5" />,
     items: ["Terraform", "Ansible"],
   },
@@ -210,18 +210,10 @@ const EXPERIENCE = [
     org: "Eucoders Technologies Pvt. Ltd.",
     period: "June 2025 – Present",
     bullets: [
-      "Built CI pipeline for Node app with matrix builds and caching (60% faster).",
-      "Containerized legacy API and shipped Helm charts to dev/stage/prod.",
-      "Added IaC guardrails (tfsec, checkov) to PR flow.",
-    ],
-  },
-  {
-    role: "Freelance Automation Projects",
-    org: "Self‑Employed",
-    period: "2024 – 2025",
-    bullets: [
-      "Wrote Ansible playbooks to harden Ubuntu images (CIS baseline).",
-      "Set up uptime monitors and PagerDuty for a Shopify store.",
+      "Assisting in CI/CD pipeline setup using GitHub Actions for automated deployments",
+      "Working with Docker containers and Kubernetes for application deployment",
+      "Supporting AWS infrastructure provisioning and configuration tasks",
+      "Monitoring application performance using Prometheus and Grafana"
     ],
   },
 ];
@@ -620,10 +612,6 @@ export default function DevOpsPortfolio() {
         <Separator className="my-8" />
 
 
-        
-
-        <Separator className="my-8" />
-
         <Section
           id="blog"
           title="DevOps Learning Logs"
@@ -649,6 +637,8 @@ export default function DevOpsPortfolio() {
           </div>
         </Section>
 
+
+        <Separator className="my-8" />
 
         {/* Contact */}
         <Section
@@ -702,8 +692,10 @@ export default function DevOpsPortfolio() {
           </Card>
         </Section>
 
+        <Separator className="my-8" />
+
         <footer className="py-10 text-xs text-muted-foreground text-center">
-          © {new Date().getFullYear()} {PROFILE.name}. Built with React, Tailwind, and shadcn/ui.
+          © {new Date().getFullYear()} {PROFILE.name}.
         </footer>
       </div>
     </div>

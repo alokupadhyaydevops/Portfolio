@@ -206,9 +206,9 @@ const PROJECTS: Project[] = [
 
 const EXPERIENCE = [
   {
-    role: "DevOps Trainee (Intern)",
-    org: "ACME Tech",
-    period: "Jan 2025 – Apr 2025",
+    role: "DevOps Engineer Intern",
+    org: "Eucoders Technologies Pvt. Ltd.",
+    period: "June 2025 – Present",
     bullets: [
       "Built CI pipeline for Node app with matrix builds and caching (60% faster).",
       "Containerized legacy API and shipped Helm charts to dev/stage/prod.",

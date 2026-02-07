@@ -84,45 +84,104 @@ const SKILLS = [
   },
 ];
 
-const PROJECTS = [
+type ProjectLinks = {
+  github: string;
+  demo?: string;
+  writeup?: string;
+};
+
+type Project = {
+  title: string;
+  description: string;
+  stack: string[];
+  tags: string[];
+  links: ProjectLinks;
+  highlights?: string[];
+};
+
+const PROJECTS: Project[] = [
   {
-    title: "Zero‑Downtime Blue‑Green on Kubernetes",
+    title: "CloudShip CI/CD Pipeline",
     description:
-      "Implemented blue‑green deployments with GitHub Actions, Helm, and Argo Rollouts to reduce release risk and enable instant rollbacks.",
-    stack: ["Kubernetes", "Helm", "Argo", "GitHub Actions"],
-    tags: ["Zero‑Downtime", "Progressive Delivery", "Rollback"],
+      "Built an end-to-end CI/CD pipeline using GitHub Actions, Docker and Kubernetes. Automated build, test and deployment workflows.",
+    stack: ["Docker", "Kubernetes", "GitHub Actions", "AWS"],
+    tags: ["CI/CD", "Automation", "DevOps"],
     links: {
-      github: "https://github.com/yourhandle/blue-green-k8s",
-      demo: "https://demo.example.com",
-      writeup: "#",
+      github: "https://github.com/alokupadhyaydevops/cloudship-devops-pipeline",
+      // demo: "https://demo.example.com",
+      // writeup: "#",
     },
     highlights: [
-      "Release time ↓ from 30m to 8m",
-      "<0.1% error rate during cutover",
+      "Automated build and deployment using GitHub Actions",
+      "Containerized application for consistent delivery",
+      "Deployed workloads on Kubernetes cluster",
+      "Implemented CI/CD workflow for faster releases"
     ],
   },
   {
-    title: "Terraform AWS 3‑Tier VPC Starter",
+    title: "Terraform AWS Production Architecture",
     description:
-      "Reusable Terraform module to create a secure 3‑tier VPC with public/private subnets, NAT, SGs, IAM, and S3 backend with remote state locking.",
-    stack: ["Terraform", "AWS", "S3", "DynamoDB"],
-    tags: ["IaC", "Reusable Module", "Best Practices"],
+      "Designed and deployed production-style AWS infrastructure using Terraform. Includes VPC, multi-AZ subnets, load balancing, auto scaling and modular IaC patterns.",
+    stack: ["Terraform", "AWS", "EC2", "ALB", "Auto Scaling"],
+    tags: ["Terraform", "AWS", "IaC", "Cloud Architecture"],
     links: {
-      github: "https://github.com/yourhandle/aws-3tier-vpc",
-      writeup: "#",
+      github: "https://github.com/alokupadhyaydevops/terraform-aws-production-architecture",
+      // writeup: "#",
     },
-    highlights: ["One‑command provisioning", "Policy‑as‑Code checks"],
+    highlights: [
+      "Provisioned VPC with multi-AZ public subnets",
+      "Configured Auto Scaling groups with an Application Load Balancer",
+      "Implemented Auto Scaling for reliability",
+      "Modular Terraform code ideal for scalable infrastructure"
+    ],
   },
   {
-    title: "Observability-in-a-Box",
+    title: "AWS CI/CD Production Web Platform",
     description:
-      "Docker Compose stack with Prometheus, Grafana, Loki, and Tempo. Auto‑discovers services, dashboards for latency, errors, saturation.",
-    stack: ["Docker", "Prometheus", "Grafana", "Loki"],
-    tags: ["SRE", "Dashboards", "Tracing"],
+      "Designed and deployed a scalable web platform on AWS with automated CI/CD using GitHub Actions, including load balancing, auto scaling, and secure IAM integration.",
+    stack: ["AWS", "GitHub Actions", "Auto Scaling", "Application Load Balancer", "S3", "Bash"],
+    tags: ["CI/CD", "AWS", "Auto Scaling", "DevOps"],
     links: {
-      github: "https://github.com/yourhandle/o11y-in-a-box",
+      github: "https://github.com/alokupadhyaydevops/aws-ci-cd-production-web-platform",
     },
-    highlights: ["<10 min setup", "Golden Signals out‑of‑the‑box"],
+    highlights: [
+      "Built an automated CI/CD pipeline using GitHub Actions",
+      "Configured AWS Auto Scaling Group behind ALB",
+      "Integrated secure IAM and deployment artifact storage on S3",
+      "Implemented versioned deployments and rollback strategy"
+    ],
+  },
+  {
+    title: "Production-Ready Web App Deployment on AWS",
+    description:
+      "Provisioned and deployed a production-ready web application on AWS using Terraform and cloud-native services, including VPC setup, security groups, and automated server configuration.",
+    stack: ["Terraform", "AWS", "EC2", "Nginx", "Security Groups", "User Data Scripts"],
+    tags: ["AWS", "Terraform", "IaC", "Web Deployment"],
+    links: {
+      github: "https://github.com/alokupadhyaydevops/production-ready-web-application-deployment-on-aws"
+    },
+    highlights: [
+      "Configured secure VPC and subnet architecture",
+      "Automated EC2 provisioning and application setup",
+      "Deployed a web application with production-oriented networking",
+      "Reusable Terraform modules for infra automation"
+    ]
+  },
+  {
+    title: "Company Technology Foundation Blueprint",
+    description:
+      "Created a detailed blueprint outlining a scalable, secure, and maintainable technology foundation. Includes architectural diagrams and guidelines for CI/CD, cloud infrastructure, monitoring, and best practices for team adoption.",
+    stack: ["Cloud Architecture", "Infrastructure Strategy", "Best Practices", "Documentation"],
+    tags: ["Architecture", "Blueprint", "DevOps Strategy"],
+    links: {
+      github: "https://github.com/alokupadhyaydevops/Company-Technology-Foundation-Blueprint"
+    },
+    highlights: [
+      "Documented scalable and secure tech stack foundations",
+      "Included best practices for CI/CD and monitoring",
+      "Architecture diagrams for cloud adoption and operations",
+      "Blueprint aimed at long-term maintainability and reliability"
+    ]
   },
 ];
 

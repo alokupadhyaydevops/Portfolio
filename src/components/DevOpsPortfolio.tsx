@@ -416,11 +416,43 @@ export default function DevOpsPortfolio() {
                   <li>Building real-world CI/CD pipelines using GitHub Actions, Docker, and Kubernetes</li>
                   <li>Designing and provisioning AWS infrastructure with Terraform using best practices</li>
                   <li>Improving system monitoring and reliability with Prometheus and Grafana</li>
+
                 </ul>
               </CardContent>
             </Card>
           </div>
         </Section>
+
+
+
+        <Separator className="my-8" />
+
+        <Section
+          id="github"
+          title="Open Source & GitHub"
+          desc="I actively build and share DevOps projects on GitHub."
+        >
+          <Card>
+            <CardContent className="pt-6 space-y-4">
+
+              <p className="text-sm text-muted-foreground">
+                My GitHub showcases real DevOps projects including Terraform infrastructure,
+                CI/CD pipelines, and AWS deployments.
+              </p>
+
+              <Button asChild className="gap-2">
+                <a href="https://github.com/alokupadhyaydevops" target="_blank">
+                  <Github className="h-4 w-4" /> Visit My GitHub
+                </a>
+              </Button>
+
+            </CardContent>
+          </Card>
+        </Section>  
+
+
+
+
 
         <Separator className="my-8" />
 

@@ -413,10 +413,9 @@ export default function DevOpsPortfolio() {
               </CardHeader>
               <CardContent className="text-sm text-muted-foreground">
                 <ul className="list-disc pl-5 space-y-2">
-                  <li>Building real-world CI/CD pipelines using GitHub Actions and Docker</li>
-                  <li>Designing AWS infrastructure with Terraform following best practices</li>
-                  <li>Strengthening Kubernetes fundamentals for production deployments</li>
-                  <li>Improving monitoring and reliability using Prometheus & Grafana</li>
+                  <li>Building real-world CI/CD pipelines using GitHub Actions, Docker, and Kubernetes</li>
+                  <li>Designing and provisioning AWS infrastructure with Terraform using best practices</li>
+                  <li>Improving system monitoring and reliability with Prometheus and Grafana</li>
                 </ul>
               </CardContent>
             </Card>

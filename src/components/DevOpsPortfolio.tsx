@@ -305,20 +305,20 @@ export default function DevOpsPortfolio() {
               </CardHeader>
               <CardContent className="grid grid-cols-2 gap-4">
                 <div>
-                  <p className="text-2xl font-semibold">15+ </p>
-                  <p className="text-sm text-muted-foreground">CI/CD Pipelines</p>
+                  <p className="text-2xl font-semibold">Real-World </p>
+                  <p className="text-sm text-muted-foreground">DevOps Projects</p>
                 </div>
                 <div>
-                  <p className="text-2xl font-semibold">99.9% </p>
-                  <p className="text-sm text-muted-foreground">Demo Uptime</p>
+                  <p className="text-2xl font-semibold">Hands-On </p>
+                  <p className="text-sm text-muted-foreground">AWS & Terraform</p>
                 </div>
                 <div>
-                  <p className="text-2xl font-semibold">$\u2009$$$ </p>
-                  <p className="text-sm text-muted-foreground">Cost Optimization</p>
+                  <p className="text-2xl font-semibold">CI/CD </p>
+                  <p className="text-sm text-muted-foreground">Automation Focus</p>
                 </div>
                 <div>
-                  <p className="text-2xl font-semibold">10m→8m</p>
-                  <p className="text-sm text-muted-foreground">Release Time</p>
+                  <p className="text-2xl font-semibold">Docker + K8s</p>
+                  <p className="text-sm text-muted-foreground">Deployment Practice</p>
                 </div>
               </CardContent>
             </Card>

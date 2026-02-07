@@ -413,9 +413,10 @@ export default function DevOpsPortfolio() {
               </CardHeader>
               <CardContent className="text-sm text-muted-foreground">
                 <ul className="list-disc pl-5 space-y-2">
-                  <li>Hardening CI/CD with security scans and SBOMs.</li>
-                  <li>Cost‑aware cloud architectures (spot, autoscaling, caching).</li>
-                  <li>Golden‑signal dashboards and SLO error budgets.</li>
+                  <li>Building real-world CI/CD pipelines using GitHub Actions and Docker</li>
+                  <li>Designing AWS infrastructure with Terraform following best practices</li>
+                  <li>Strengthening Kubernetes fundamentals for production deployments</li>
+                  <li>Improving monitoring and reliability using Prometheus & Grafana</li>
                 </ul>
               </CardContent>
             </Card>

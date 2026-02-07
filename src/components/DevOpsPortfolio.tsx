@@ -333,7 +333,7 @@ export default function DevOpsPortfolio() {
             transition={{ duration: 0.5 }}
             className="space-y-4"
           >
-            <Badge className="rounded-full">Open to Work</Badge>
+            <Badge className="rounded-full">Open to DevOps & Cloud Roles</Badge>
             <h1 className="text-3xl md:text-5xl font-bold leading-tight">
               {PROFILE.title} | AWS • Kubernetes • CI/CD • Terraform
             </h1>

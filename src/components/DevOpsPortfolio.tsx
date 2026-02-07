@@ -84,6 +84,25 @@ const SKILLS = [
   },
 ];
 
+const BLOGS = [
+  {
+    title: "Setting up CI/CD with GitHub Actions",
+    desc: "Learned how to automate build and deployment pipelines using GitHub Actions for Dockerized apps.",
+    link: "https://github.com/alokupadhyaydevops",
+  },
+  {
+    title: "Deploying Apps on Kubernetes",
+    desc: "Practiced Kubernetes deployments, services and scaling workloads.",
+    link: "https://github.com/alokupadhyaydevops",
+  },
+  {
+    title: "Terraform for AWS Infrastructure",
+    desc: "Used Terraform to provision VPCs, EC2 and load balancers in AWS.",
+    link: "https://github.com/alokupadhyaydevops",
+  },
+];
+
+
 type ProjectLinks = {
   github: string;
   demo?: string;
@@ -599,6 +618,37 @@ export default function DevOpsPortfolio() {
         </Section>
 
         <Separator className="my-8" />
+
+
+        
+
+        <Separator className="my-8" />
+
+        <Section
+          id="blog"
+          title="DevOps Learning Logs"
+          desc="I document my DevOps learning and hands-on practice."
+>
+          <div className="grid md:grid-cols-3 gap-4">
+            {BLOGS.map((b) => (
+              <Card key={b.title}>
+                <CardHeader>
+                  <CardTitle className="text-base">{b.title}</CardTitle>
+                  <CardDescription>{b.desc}</CardDescription>
+                </CardHeader>
+
+                <CardContent>
+                  <Button asChild variant="outline" size="sm">
+                    <a href={b.link} target="_blank">
+                      Read More
+                    </a>
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </Section>
+
 
         {/* Contact */}
         <Section

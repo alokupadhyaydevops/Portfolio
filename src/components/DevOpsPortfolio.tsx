@@ -37,7 +37,7 @@ import { Separator } from "@/components/ui/separator";
 // Simple data model (edit me!)
 // -----------------------------
 const PROFILE = {
-  name: "Alok Kumar Upadhyay",
+  name: "Sudhanshu Verma",
   title: "DevOps Engineer",
   location: "India (Open to Remote)",
   email: "alokupadhyay039@gmail.com",
